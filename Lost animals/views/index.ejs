@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost animals</title>
+</head>
+
+<body>
+    <form method="post" action="animal" enctype="multipart/form-data">
+        <h1>Add new animal</h1>
+        <label>Add photo:</label><br>
+        <div>
+            <input type="file" name="image" required>
+        </div>
+        <div>
+            <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;" required>
+description and other info
+            </textarea>
+        </div>
+        <div>
+            <input type="tel" name="tel" placeholder="your phonenumber..." required>
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="your email..." required>
+        </div>
+        <div>
+            <input type="submit" value="Add Animal">
+        </div>
+    </form>
+</body>
+
+</html>
